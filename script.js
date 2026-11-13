@@ -1,0 +1,3 @@
+"Dannink"
+
+typeof "dannick"
