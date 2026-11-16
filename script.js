@@ -1,3 +1,0 @@
-"Dannink"
-
-typeof "dannick"
