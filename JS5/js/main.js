@@ -1,19 +1,28 @@
+let computer = "rock";
+let playerOne = "paper";
+let result;
 
-const anyName = "Jonathan"
-
-console.log(anyName.charAt(Math.floor(Math.random() * anyName.length)));
 
 
-let customerIsBanned = true;
-let soup = "chicken";
-let crackers = true
-let reply;
-if (customerIsBanned) {
-    reply = "no soup for you!";
-} else if (soup && crackers) {
-    reply = "here's your order of ${soup} & crackers.";
-} else if (soup) {
-    reply = "here's your order of ${soup}";
+if (playerOne === computer) {
+    result = "tie game!"
+} else if (playerOne === "rock") {
+    if (computer === "paper") {
+        result = "computer wins"
+    } else {
+        result = "playerOne wins"
+    }
+} else if (playerOne === "paper") {
+    if (computer === "scissors") {
+        result = "computer wins"
+    } else {
+        result = "playerOne wins"
+    }
 } else {
-    reply = "sorry, we're out of ${soup}"
+    if (computer === "rock") {
+        result = "computer wins"
+    } else {
+        result = "playerOne wins"
+    }
 }
+console.log(result)
